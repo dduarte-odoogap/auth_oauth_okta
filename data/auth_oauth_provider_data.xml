@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="auth_oauth_provider_okta" model="auth.oauth.provider">
+            <field name="name">Okta</field>
+            <field name="client_id">0</field>
+            <field name="client_secret">0</field>
+            <field name="enabled" eval="True"/>
+            <field name="body">Sign in</field>
+            <field name="auth_endpoint">https://www.acme.com/oauth/authorize</field>
+            <field name="scope">email</field>
+            <field name="validation_endpoint">https://www.acme.com/api/token</field>
+            <field name="css_class">okta-sso</field>
+        </record>
+
+        <record id="auth_oauth.provider_openerp" model="auth.oauth.provider">
+            <field name="enabled" eval="False"/>
+        </record>
+
+    </data>
+</odoo>
